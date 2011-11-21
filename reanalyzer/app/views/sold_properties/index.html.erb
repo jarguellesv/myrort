@@ -1,0 +1,65 @@
+<h1>Listing sold_properties</h1>
+
+<table>
+  <tr>
+    <th>Closing date</th>
+    <th>Subdivision</th>
+    <th>List price</th>
+    <th>Sold price</th>
+    <th>Square feet</th>
+    <th>Year built</th>
+    <th>Bedrooms</th>
+    <th>Bathrooms</th>
+    <th>Land square feet</th>
+    <th>Floors</th>
+    <th>Seller1</th>
+    <th>Seller2</th>
+    <th>Flooring</th>
+    <th>Kitchen</th>
+    <th>Cso</th>
+    <th>Mlr</th>
+    <th>Days on market</th>
+    <th>Address</th>
+    <th>Selling agent</th>
+    <th>Office name</th>
+    <th>Listing agent</th>
+    <th>Base taxes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sold_properties.each do |sold_property| %>
+  <tr>
+    <td><%= sold_property.closing_date %></td>
+    <td><%= sold_property.subdivision %></td>
+    <td><%= sold_property.list_price %></td>
+    <td><%= sold_property.sold_price %></td>
+    <td><%= sold_property.square_feet %></td>
+    <td><%= sold_property.year_built %></td>
+    <td><%= sold_property.bedrooms %></td>
+    <td><%= sold_property.bathrooms %></td>
+    <td><%= sold_property.land_square_feet %></td>
+    <td><%= sold_property.floors %></td>
+    <td><%= sold_property.seller1 %></td>
+    <td><%= sold_property.seller2 %></td>
+    <td><%= sold_property.flooring %></td>
+    <td><%= sold_property.kitchen %></td>
+    <td><%= sold_property.cso %></td>
+    <td><%= sold_property.mlr %></td>
+    <td><%= sold_property.days_on_market %></td>
+    <td><%= sold_property.address %></td>
+    <td><%= sold_property.selling_agent %></td>
+    <td><%= sold_property.office_name %></td>
+    <td><%= sold_property.listing_agent %></td>
+    <td><%= sold_property.base_taxes %></td>
+    <td><%= link_to 'Show', sold_property %></td>
+    <td><%= link_to 'Edit', edit_sold_property_path(sold_property) %></td>
+    <td><%= link_to 'Destroy', sold_property, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sold property', new_sold_property_path %>

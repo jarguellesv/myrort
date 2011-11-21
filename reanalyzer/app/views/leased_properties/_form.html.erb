@@ -1,0 +1,88 @@
+<%= form_for(@leased_property) do |f| %>
+  <% if @leased_property.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@leased_property.errors.count, "error") %> prohibited this leased_property from being saved:</h2>
+
+      <ul>
+      <% @leased_property.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table>
+	<tr>
+		<td><%= f.label :closing_date %></td>
+		<td><%= f.date_select :closing_date %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :available_date %></td>
+		<td><%= f.date_select :available_date %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :subdivision %></td>
+		<td><%= f.text_field :subdivision %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :lease_price %></td>
+		<td><%= f.text_field :lease_price %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :term_months %></td>
+		<td><%= f.text_field :term_months %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :square_feet %></td>
+		<td><%= f.text_field :square_feet %></td>
+	</tr>	
+	<tr>
+		<td><%= f.label :year_built %></td>
+		<td><%= f.text_field :year_built %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :bedroom %></td>
+		<td><%= f.text_field :bedroom %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :bathroom %></td>
+		<td><%= f.text_field :bathroom %></td>
+	</tr>			
+	<tr>
+		<td><%= f.label :land_square_feet %></td>
+		<td><%= f.text_field :land_square_feet %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :floors %></td>
+		<td><%= f.text_field :floors %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :office_name %></td>
+		<td><%= f.text_field :office_name %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :listing_agent %></td>
+		<td><%= f.text_field :listing_agent %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :cso %></td>
+		<td><%= f.text_field :cso %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :mls %></td>
+		<td><%= f.text_field :mls %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :address %></td>
+		<td><%= f.text_field :address %></td>
+	</tr>
+	<tr>
+		<td><%= f.label :remarks %></td>
+		<td><%= f.text_area :remarks %></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td><%= f.submit %></td>
+	</tr>					
+</table>
+<% end %>

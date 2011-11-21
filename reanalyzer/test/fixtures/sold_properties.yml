@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  closing_date: 2011-11-08
+  subdivision: MyString
+  list_price: 
+  sold_price: 
+  square_feet: 
+  year_built: 
+  bedrooms: 
+  bathrooms: 
+  land_square_feet: 
+  floors: 
+  seller1: MyString
+  seller2: MyString
+  flooring: MyString
+  kitchen: MyString
+  cso: MyString
+  mlr: MyString
+  days_on_market: 
+  address: MyString
+  selling_agent: MyString
+  office_name: MyString
+  listing_agent: MyString
+  base_taxes: 
+
+two:
+  closing_date: 2011-11-08
+  subdivision: MyString
+  list_price: 
+  sold_price: 
+  square_feet: 
+  year_built: 
+  bedrooms: 
+  bathrooms: 
+  land_square_feet: 
+  floors: 
+  seller1: MyString
+  seller2: MyString
+  flooring: MyString
+  kitchen: MyString
+  cso: MyString
+  mlr: MyString
+  days_on_market: 
+  address: MyString
+  selling_agent: MyString
+  office_name: MyString
+  listing_agent: MyString
+  base_taxes: 

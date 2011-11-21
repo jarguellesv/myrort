@@ -1,0 +1,55 @@
+<h1>Listing leased_properties</h1>
+
+<table>
+  <tr>
+    <th>Closing date</th>
+    <th>Available date</th>
+    <th>Subdivision</th>
+    <th>Lease price</th>
+    <th>Term months</th>
+    <th>Square feet</th>
+    <th>Year built</th>
+    <th>Bedroom</th>
+    <th>Bathroom</th>
+    <th>Land square feet</th>
+    <th>Floors</th>
+    <th>Office name</th>
+    <th>Listing agent</th>
+    <th>Cso</th>
+    <th>Mls</th>
+    <th>Address</th>
+    <th>Remarks</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @leased_properties.each do |leased_property| %>
+  <tr>
+    <td><%= leased_property.closing_date %></td>
+    <td><%= leased_property.available_date %></td>
+    <td><%= leased_property.subdivision %></td>
+    <td><%= leased_property.lease_price %></td>
+    <td><%= leased_property.term_months %></td>
+    <td><%= leased_property.square_feet %></td>
+    <td><%= leased_property.year_built %></td>
+    <td><%= leased_property.bedroom %></td>
+    <td><%= leased_property.bathroom %></td>
+    <td><%= leased_property.land_square_feet %></td>
+    <td><%= leased_property.floors %></td>
+    <td><%= leased_property.office_name %></td>
+    <td><%= leased_property.listing_agent %></td>
+    <td><%= leased_property.cso %></td>
+    <td><%= leased_property.mls %></td>
+    <td><%= leased_property.address %></td>
+    <td><%= leased_property.remarks %></td>
+    <td><%= link_to 'Show', leased_property %></td>
+    <td><%= link_to 'Edit', edit_leased_property_path(leased_property) %></td>
+    <td><%= link_to 'Destroy', leased_property, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Leased property', new_leased_property_path %>

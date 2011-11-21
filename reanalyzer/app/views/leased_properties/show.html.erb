@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Closing date:</b>
+  <%= @leased_property.closing_date %>
+</p>
+
+<p>
+  <b>Available date:</b>
+  <%= @leased_property.available_date %>
+</p>
+
+<p>
+  <b>Subdivision:</b>
+  <%= @leased_property.subdivision %>
+</p>
+
+<p>
+  <b>Lease price:</b>
+  <%= @leased_property.lease_price %>
+</p>
+
+<p>
+  <b>Term months:</b>
+  <%= @leased_property.term_months %>
+</p>
+
+<p>
+  <b>Square feet:</b>
+  <%= @leased_property.square_feet %>
+</p>
+
+<p>
+  <b>Year built:</b>
+  <%= @leased_property.year_built %>
+</p>
+
+<p>
+  <b>Bedroom:</b>
+  <%= @leased_property.bedroom %>
+</p>
+
+<p>
+  <b>Bathroom:</b>
+  <%= @leased_property.bathroom %>
+</p>
+
+<p>
+  <b>Land square feet:</b>
+  <%= @leased_property.land_square_feet %>
+</p>
+
+<p>
+  <b>Floors:</b>
+  <%= @leased_property.floors %>
+</p>
+
+<p>
+  <b>Office name:</b>
+  <%= @leased_property.office_name %>
+</p>
+
+<p>
+  <b>Listing agent:</b>
+  <%= @leased_property.listing_agent %>
+</p>
+
+<p>
+  <b>Cso:</b>
+  <%= @leased_property.cso %>
+</p>
+
+<p>
+  <b>Mls:</b>
+  <%= @leased_property.mls %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @leased_property.address %>
+</p>
+
+<p>
+  <b>Remarks:</b>
+  <%= @leased_property.remarks %>
+</p>
+
+
+<%= link_to 'Edit', edit_leased_property_path(@leased_property) %> |
+<%= link_to 'Back', leased_properties_path %>

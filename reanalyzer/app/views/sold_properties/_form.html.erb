@@ -1,0 +1,105 @@
+<%= form_for(@sold_property) do |f| %>
+  <% if @sold_property.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sold_property.errors.count, "error") %> prohibited this sold_property from being saved:</h2>
+
+      <ul>
+      <% @sold_property.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :closing_date %><br />
+    <%= f.date_select :closing_date %>
+  </div>
+  <div class="field">
+    <%= f.label :subdivision %><br />
+    <%= f.text_field :subdivision %>
+  </div>
+  <div class="field">
+    <%= f.label :list_price %><br />
+    <%= f.text_field :list_price %>
+  </div>
+  <div class="field">
+    <%= f.label :sold_price %><br />
+    <%= f.text_field :sold_price %>
+  </div>
+  <div class="field">
+    <%= f.label :square_feet %><br />
+    <%= f.text_field :square_feet %>
+  </div>
+  <div class="field">
+    <%= f.label :year_built %><br />
+    <%= f.text_field :year_built %>
+  </div>
+  <div class="field">
+    <%= f.label :bedrooms %><br />
+    <%= f.text_field :bedrooms %>
+  </div>
+  <div class="field">
+    <%= f.label :bathrooms %><br />
+    <%= f.text_field :bathrooms %>
+  </div>
+  <div class="field">
+    <%= f.label :land_square_feet %><br />
+    <%= f.text_field :land_square_feet %>
+  </div>
+  <div class="field">
+    <%= f.label :floors %><br />
+    <%= f.text_field :floors %>
+  </div>
+  <div class="field">
+    <%= f.label :seller1 %><br />
+    <%= f.text_field :seller1 %>
+  </div>
+  <div class="field">
+    <%= f.label :seller2 %><br />
+    <%= f.text_field :seller2 %>
+  </div>
+  <div class="field">
+    <%= f.label :flooring %><br />
+    <%= f.text_field :flooring %>
+  </div>
+  <div class="field">
+    <%= f.label :kitchen %><br />
+    <%= f.text_field :kitchen %>
+  </div>
+  <div class="field">
+    <%= f.label :cso %><br />
+    <%= f.text_field :cso %>
+  </div>
+  <div class="field">
+    <%= f.label :mlr %><br />
+    <%= f.text_field :mlr %>
+  </div>
+  <div class="field">
+    <%= f.label :days_on_market %><br />
+    <%= f.text_field :days_on_market %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :selling_agent %><br />
+    <%= f.text_field :selling_agent %>
+  </div>
+  <div class="field">
+    <%= f.label :office_name %><br />
+    <%= f.text_field :office_name %>
+  </div>
+  <div class="field">
+    <%= f.label :listing_agent %><br />
+    <%= f.text_field :listing_agent %>
+  </div>
+  <div class="field">
+    <%= f.label :base_taxes %><br />
+    <%= f.text_field :base_taxes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
