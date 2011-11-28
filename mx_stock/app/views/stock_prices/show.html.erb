@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Price date:</b>
+  <%= @stock_price.price_date %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%= @stock_price.open %>
+</p>
+
+<p>
+  <b>High:</b>
+  <%= @stock_price.high %>
+</p>
+
+<p>
+  <b>Low:</b>
+  <%= @stock_price.low %>
+</p>
+
+<p>
+  <b>Close:</b>
+  <%= @stock_price.close %>
+</p>
+
+<p>
+  <b>Volume:</b>
+  <%= @stock_price.volume %>
+</p>
+
+<p>
+  <b>Adjusted close:</b>
+  <%= @stock_price.adjusted_close %>
+</p>
+
+<p>
+  <b>Stock:</b>
+  <%= @stock_price.stock %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_price_path(@stock_price) %> |
+<%= link_to 'Back', stock_prices_path %>

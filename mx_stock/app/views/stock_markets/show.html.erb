@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @stock_market.name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @stock_market.code %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_market_path(@stock_market) %> |
+<%= link_to 'Back', stock_markets_path %>
